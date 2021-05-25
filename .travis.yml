@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - lts/*
+install:
+  - yarn install
+script:
+  - yarn build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  strategy: git
+  local_dir: build
+  token: $GITHUB_TOKEN
+  target-branch: gh-pages
+  keep_history: true
+  on:
+    branch: master
