@@ -1,10 +1,9 @@
+import styles from './Home.module.scss';
 import { useEffect } from 'react';
+import hljs from 'highlight.js';
+import 'highlight.js/styles/atom-one-dark.css';
 import { changeDocumentTitle } from '../../utils';
 import WeekOne from './WeekOne';
-
-import hljs from 'highlight.js/lib/core';
-import javascript from 'highlight.js/lib/languages/javascript';
-hljs.registerLanguage('javascript', javascript);
 
 export default function Home() {
     useEffect(() => {
@@ -13,7 +12,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div>
+        <div className={styles.home}>
             <WeekOne />
         </div>
     );

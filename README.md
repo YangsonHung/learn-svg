@@ -9,7 +9,7 @@ cd learn-svg
 
 yarn install
 
-yarn star
+yarn start
 ```
 
 浏览器中打开 [http://localhost:9527/learn-svg](http://localhost:9527/learn-svg)
