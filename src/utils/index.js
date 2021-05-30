@@ -1,5 +1,6 @@
 export const changeDocumentTitle = () => {
     var title = document.title;
+
     document.addEventListener(
         'visibilitychange',
         function (event) {
