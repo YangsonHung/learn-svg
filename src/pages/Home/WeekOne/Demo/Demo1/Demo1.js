@@ -64,7 +64,7 @@ const Demo1 = ({ initValue = 0 }) => {
     };
 
     return (
-        <div>
+        <div style={{ textAlign: 'center' }}>
             <svg width="100" height="100">
                 <circle {...bottomCircleProps} />
                 <circle {...topCircleProps} />
