@@ -1,47 +1,47 @@
-const textProps = {
-    x: '50%',
-    y: '50%',
-    fill: 'Gold',
-    style: {
-        fontSize: '22px',
-        fontWeight: '700',
-    },
-    alignmentBaseline: 'middle',
-    textAnchor: 'middle',
-};
+// const textProps = {
+//     x: '50%',
+//     y: '50%',
+//     fill: 'Gold',
+//     style: {
+//         fontSize: '22px',
+//         fontWeight: '700',
+//     },
+//     alignmentBaseline: 'middle',
+//     textAnchor: 'middle',
+// };
 
-// 45/2 === 360/16 将圆360°16等分，每等分的圆心角，然后计算出弧长:公式： nπr/180
-const arcLength = ((45 / 2) * Math.PI * 100) / 180;
-const d1 = 2;
-const d2 = arcLength - 2;
-const lineCircleProps = {
-    id: 'linecircle',
-    fill: 'none',
-    strokeWidth: 100,
-    cx: 300,
-    cy: 300,
-    r: 150,
-    stroke: 'white',
-    strokeDasharray: `${d1} ${d2}`,
-    style: {
-        transformOrigin: 'center',
-    },
-};
+// // 45/2 === 360/16 将圆360°16等分，每等分的圆心角，然后计算出弧长:公式： nπr/180
+// const arcLength = ((45 / 2) * Math.PI * 100) / 180;
+// const d1 = 2;
+// const d2 = arcLength - 2;
+// const lineCircleProps = {
+//     id: 'linecircle',
+//     fill: 'none',
+//     strokeWidth: 100,
+//     cx: 300,
+//     cy: 300,
+//     r: 150,
+//     stroke: 'white',
+//     strokeDasharray: `${d1} ${d2}`,
+//     style: {
+//         transformOrigin: 'center',
+//     },
+// };
 
-const lineAnimateProps1 = {
-    attributeName: 'transform',
-    attributeType: 'XML',
-    type: 'rotate',
-    from: 0,
-    to: 360,
-    dur: 9,
-    repeatCount: 'indefinite',
-};
+// const lineAnimateProps1 = {
+//     attributeName: 'transform',
+//     attributeType: 'XML',
+//     type: 'rotate',
+//     from: 0,
+//     to: 360,
+//     dur: 9,
+//     repeatCount: 'indefinite',
+// };
 
-const lineAnimateProps2 = {
-    ...lineAnimateProps1,
-    begin: 'ce2.mouseover',
-};
+// const lineAnimateProps2 = {
+//     ...lineAnimateProps1,
+//     begin: 'ce2.mouseover',
+// };
 // ////////////////////////////////////
 const svg = {
     width: 600,
