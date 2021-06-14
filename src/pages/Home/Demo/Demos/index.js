@@ -1,8 +1,6 @@
-import Demo1 from './Demo1/Demo1';
-import Demo2 from './Demo2/Demo2';
-import Demo3 from './Demo3/Demo3';
-import demo1Code from './Demo1/demo1-code';
-import demo2Code from './Demo2/demo2-code';
-import demo3Code from './Demo3/demo3-code';
+import Demo1, { DemoCode1 } from './Demo1';
+import Demo2, { DemoCode2 } from './Demo2';
+import Demo3, { DemoCode3 } from './Demo3';
+import Demo4, { DemoCode4 } from './Demo4';
 
-export { Demo1, Demo2, Demo3, demo1Code, demo2Code, demo3Code };
+export { Demo1, DemoCode1, Demo2, DemoCode2, Demo3, DemoCode3, Demo4, DemoCode4 };
