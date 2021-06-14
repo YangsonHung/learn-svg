@@ -1,6 +1,6 @@
-import styles from './WeekOne.module.scss';
+import styles from './Demo.module.scss';
 import { useState } from 'react';
-import { Demo1, Demo2, Demo3, demo1Code, demo2Code, demo3Code } from './Demo';
+import { Demo1, Demo2, Demo3, demo1Code, demo2Code, demo3Code } from './Demos';
 import ViewCodeButton from '../../../components/ViewCodeButton';
 import Code from '../../../components/Code';
 
