@@ -44,7 +44,7 @@ const Demo3 = () => {
                         attributeName="cx"
                         from={cx1}
                         to={cx2}
-                        begin="click"
+                        begin="indefinite"
                         dur="1s"
                         fill="freeze"
                     />
@@ -54,7 +54,7 @@ const Demo3 = () => {
                         attributeName="r"
                         from={r1}
                         to={r2}
-                        begin="click"
+                        begin="indefinite"
                         dur="1s"
                         fill="freeze"
                     />
