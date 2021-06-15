@@ -1,6 +1,6 @@
 import styles from './Demo.module.scss';
 import { useState } from 'react';
-import { Demo1, DemoCode1, Demo2, DemoCode2, Demo3, DemoCode3, Demo4, DemoCode4 } from './Demos';
+import { Demo1, DemoCode1, Demo2, DemoCode2, Demo3, DemoCode3, Demo4, DemoCode4, Demo5, DemoCode5, Demo6, DemoCode6 } from './Demos';
 import ViewCodeButton from '../../../components/ViewCodeButton';
 import Code from '../../../components/Code';
 
@@ -10,6 +10,8 @@ const WeekOne = () => {
         demo2: false,
         demo3: false,
         demo4: false,
+        demo5: false,
+        demo6: false,
     });
 
     return (
@@ -33,6 +35,16 @@ const WeekOne = () => {
                 <Demo4 />
                 <ViewCodeButton onClick={() => setShow({ ...show, demo4: !show.demo4 })} />
                 <Code show={show.demo4} code={DemoCode4} />
+            </div>
+            <div id="demo5" className={styles.demoWrapper}>
+                <Demo5 />
+                <ViewCodeButton onClick={() => setShow({ ...show, demo5: !show.demo5 })} />
+                <Code show={show.demo5} code={DemoCode5} />
+            </div>
+            <div id="demo6" className={styles.demoWrapper}>
+                <Demo6 />
+                <ViewCodeButton onClick={() => setShow({ ...show, demo6: !show.demo6 })} />
+                <Code show={show.demo6} code={DemoCode6} />
             </div>
         </div>
     );
